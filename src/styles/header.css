@@ -5,3 +5,36 @@
     margin: 0 auto;
     max-width: 940px;
 }
+
+.header_info-main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header_info-main-container--title {
+    display: flex;
+}
+
+.header_info-main-container--row {
+    display: flex;
+}
+
+.header_info-main-container--info {
+    display: flex;
+}
+
+.header_info-main-container--profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    display: flex;
+    border: 3px solid brown;
+}
+
+.profile_pic {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
