@@ -1,0 +1,21 @@
+.nav_container {
+    border-bottom: 2px solid grey;
+}
+
+.nav_container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.nav_icons-item {
+    margin: 0 5px;
+}
+
+.nav_icons {
+    display: flex;
+    list-style-type: none;
+}

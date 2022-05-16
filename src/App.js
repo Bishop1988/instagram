@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+// import { fetchImages } from './utils';
+import { useState, useEffect } from 'react';
+import Navbar from './components/Navbar';
+import Profile from './components/Profile';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [images, setImages] = useState([])
+  const [userInput, setUserInput] = useState()
+  const [title, setTitle] = useState()
+
+  // useEffect(() => {
+  //   fetchImages(setImages)
+  // }, [])
+
+  const submitHandler = (e) => {
+    e.preventDefault()
+    setTitle(userInput)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Profile />
+      {/* <form onSubmit={submitHandler}>
+        <Header title={title} />
+        <input type="text" onChange={(e) => setUserInput(e.target.value)}/>
+      </form>
+      {title ? <h2>You wrote a title</h2> : <h2>Hurry up and write a title</h2>}
+      {title && <h2>Hooray title is true</h2>}
+      {images.map((image, i) => {
+        return (
+          <img 
+            src={image.download_url} 
+            alt={`random file from unslpash number ${i}`} 
+            className="display-images"
+          />
+        )
+      })} */}
     </div>
   );
 }

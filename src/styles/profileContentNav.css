@@ -1,0 +1,17 @@
+.content_nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid grey;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.content_nav-item {
+    display: flex;
+    margin: 15px 20px;
+}
+
+.content_nav-item p {
+    margin: 0 3px;
+}
